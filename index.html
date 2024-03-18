@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(37, 31, 31, 0.712);
+}
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.image .code{
+    border-radius: 50%;
+    width: 100%;
+    border:2px solid black;
+    background-size: cover;
+}
+.portfolio{
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+.name{
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.location{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: yellowgreen;
+}
+.head{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #fff;
+}
+.portfolio .button{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2vw 0;
+    gap: 1vw;
+}
+.button button{
+    padding: 1vw 1.6vw;
+   font-size: 1vw;
+   border-radius: 1.2vw;
+   border: none;
+   background-color: rgba(37, 31, 31, 0.712);
+   color: #fff;
+   font-weight: 700;
+}
+@media (max-width:600px) {
+    .portfolio{
+        height: calc(100% - 150px);
+        max-width: 350px;
+        width: 100%;
+    }
+    .text{
+        padding: 3vw 2vw;
+    }
+    .name{
+        font-size: 6vw;
+    }
+    .location{
+        font-size: 4vw;
+    }
+    .head{
+        font-size: 4vw;
+        font-weight: 500;}
+        
+    .portfolio .button{
+        padding: 5vw 0;
+        gap: 4vw;
+        }
+        .button button{
+            padding: 3vw 4vw;
+           font-size: 3vw;
+           border-radius: 1.2vw;
+        }
+}
+    
+</style>
+<body>
+    <div class="portfolio">
+        <div class="image">
+            <img src="coding-.png" alt="" class="code">
+        </div>
+        <div class="text">
+            <p class="name">Jessica Randall</p>
+            <p class="location">London,United Kingdom</p>
+        </div>
+            <p class="head">"Front-end developer and avid reader."</p>
+            <div class="button">
+                <button>GitHub</button>
+                <button>Frontend Mentor</button>
+                <button>LinkedIn</button>
+                <button>Twitter</button>
+                <button>Instagram</button>
+            </div>
+    </div>
+</body>
+</html>
